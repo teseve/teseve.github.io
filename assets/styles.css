@@ -320,7 +320,7 @@ footer .cc a {
   color: #f76b1c;
 }
 
-@media all and (min-width: 40rem) {
+@media all and (min-width: 40em) {
   header {
     padding: 6rem 0 32rem;
   }
@@ -405,7 +405,7 @@ footer .cc a {
   }
 }
 
-@media all and (min-width: 60rem) {
+@media all and (min-width: 60em) {
   a {
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
