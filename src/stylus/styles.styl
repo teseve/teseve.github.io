@@ -14,7 +14,7 @@ meyer-reset()
 box-sizing-reset()
 
 // fonts
-font-face( "Glyphs", "./fonts/webhostinghub/webhostinghub-glyphs-webfont", formats: eot svg ttf )
+font-face( "Glyphs", "./fonts/glyphs/glyphs", formats: eot svg ttf woff )
 Glyphs = "Glyphs"
 font-face( "FiraSans", "./fonts/firasans/FiraSans-Book", formats: eot woff )
 font-face( "FiraSans", "./fonts/firasans/FiraSans-Bold", bold, formats: eot woff )
@@ -139,7 +139,7 @@ header
             text-align center
             i
                 display block
-                margin 0 auto .8rem
+                margin 0 auto
                 font normal 4.8rem/1 Glyphs
             strong
                 display block
@@ -157,7 +157,7 @@ header
                 display none
             &.github
                 i:before
-                    content ""
+                    content "c"
 
 .what
     padding .1rem 0 2rem
@@ -178,8 +178,6 @@ footer
     padding .75rem 0 .5rem
     background white url( ./img/header-bcg.png ) center repeat
     box-shadow 0 0 1rem black
-    nav
-        display none
     .cc
         max-width 90%
         margin 0 auto
@@ -188,7 +186,7 @@ footer
         text-align right
         .love
             &:before
-                content ""
+                content "a"
                 font normal 1.4rem/1.25 Glyphs
                 vertical-align -.2rem
             font-size 0
@@ -222,7 +220,6 @@ footer
             li a
                 padding 2.4rem 0
                 i
-                    margin 0 auto 1.2rem
                     font normal 5.6rem/1 Glyphs
                 strong
                     margin 0 auto 1.2rem
@@ -248,3 +245,64 @@ footer
                 &:before
                     font normal 1.8rem/1.25 Glyphs
                     vertical-align -.3rem
+
+// 960+
++media-query( all, min-width 60rem )
+    a
+        transition all .25s ease-in-out
+        &:hover
+            color tint( linkColor, 25% )
+
+    .links
+        h2
+            span
+                font light 1.8rem/1.33 FiraSans
+            a
+                font normal 1.4rem/1.33 FiraSans
+        ul
+            max-width 96rem
+            margin 0 auto
+            clear fix
+            li
+                width 30rem
+                float left
+                a
+                    padding 2.4rem 0
+                    i
+                        font normal 5.6rem/1 Glyphs
+                    strong
+                        margin 0 auto 1.2rem
+                        font light 2rem/1.33 FiraSans
+                    span
+                        padding 1rem 1.8rem .8rem
+                        font normal 1.8rem/1.33 FiraSans
+                        transition all .25s ease-in-out
+                        &:hover
+                            background shade( mainColor, 15% )
+                    &.win
+                    &.osx
+                        display block
+                    &.win
+                        i:before
+                            content "d"
+                    &.osx
+                        i:before
+                            content "b"
+                & + li
+                    margin-left 3rem
+
+    .what
+        padding .1rem 0 10rem
+        h2
+            max-width 96rem
+            margin 6.4rem auto 4.8rem
+            font light 3.6rem/1 FiraSans
+        p
+            max-width 96rem
+            margin 0 auto 2.4rem
+            font normal 1.6rem/1.5 FiraSans
+
+    footer
+        .cc
+            max-width 96rem
+            text-align center
