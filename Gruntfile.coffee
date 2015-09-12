@@ -10,7 +10,7 @@ module.exports = ( grunt ) ->
       options:
         pretty: no
         data:
-            version: "0.3.1"
+            version: "0.3.2"
       page:
         files:
           "index.html": "src/jade/index.jade"
