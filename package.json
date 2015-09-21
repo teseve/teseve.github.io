@@ -1,7 +1,7 @@
 {
   "name": "teseve.github.io",
   "description": "A simple static webserver, in an app.",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "private": true,
   "homepage": "http://teseve.github.io",
   "author": {
