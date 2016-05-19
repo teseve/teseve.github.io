@@ -185,7 +185,8 @@ header h1 span {
   box-shadow: 0 0 2rem rgba(0,0,0,0.25);
 }
 
-.links {
+.links,
+.alternative {
   margin: 0 auto;
   padding: 0 0 4rem;
   background: #333;
@@ -224,6 +225,13 @@ header h1 span {
 
 .links h2 a:after {
   content: ")";
+}
+
+.alternative p {
+  max-width: 90%;
+  margin: 0 auto 1.4rem;
+  font: normal 1.4rem/1.33 "FiraSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #eee;
 }
 
 .links ul {
@@ -269,6 +277,10 @@ header h1 span {
 
 .links ul li a.github i:before {
   content: "c";
+}
+
+.alternative {
+  padding: 4rem 0 2.6rem;
 }
 
 .what {
@@ -323,6 +335,11 @@ footer .cc a {
 @media all and (min-width: 40em) {
   header {
     padding: 6rem 0 32rem;
+  }
+
+  p {
+    margin: 0 auto 2rem;
+    font: normal 1.6rem/1.5 "FiraSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   .screenshot {
@@ -386,11 +403,6 @@ footer .cc a {
     font: 100 3.2rem/1 "FiraSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
-  .what p {
-    margin: 0 auto 2rem;
-    font: normal 1.6rem/1.5 "FiraSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-
   footer {
     padding: 1rem 0 0.75rem;
   }
@@ -413,6 +425,12 @@ footer .cc a {
 
   a:hover {
     color: #b4b2ff;
+  }
+
+  p {
+    max-width: 96rem;
+    margin: 0 auto 2.4rem;
+    font: normal 1.6rem/1.5 "FiraSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   .links h2 span {
@@ -492,12 +510,6 @@ footer .cc a {
     max-width: 96rem;
     margin: 6.4rem auto 4.8rem;
     font: 100 3.6rem/1 "FiraSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-
-  .what p {
-    max-width: 96rem;
-    margin: 0 auto 2.4rem;
-    font: normal 1.6rem/1.5 "FiraSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   footer .cc {
