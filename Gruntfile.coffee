@@ -4,13 +4,14 @@ module.exports = ( grunt ) ->
 
   require( "matchdep" ).filterDev( "grunt-*" ).forEach grunt.loadNpmTasks
 
+  pkg = grunt.file.readJSON "package.json"
+
   grunt.initConfig
     # html
     jade:
       options:
         pretty: no
-        data:
-            version: "0.5.0"
+        data: pkg.teseve
       page:
         files:
           "index.html": "src/jade/index.jade"
