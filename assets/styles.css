@@ -18,7 +18,6 @@ p,
 a,
 img,
 strong,
-sup,
 i,
 ul,
 li,
@@ -89,10 +88,6 @@ html {
   src: url("./fonts/firasans/FiraSans-ExtraLight.eot?#iefix") format("embedded-opentype"), url("./fonts/firasans/FiraSans-ExtraLight.woff") format("woff");
 }
 
-sup {
-  vertical-align: super;
-}
-
 a {
   color: #9b99ff;
   text-decoration: none;
@@ -119,7 +114,7 @@ header h1 {
   position: relative;
   margin: 0;
   color: #fff;
-  text-shadow: 0 0 0.6rem #f76b1c;
+  text-shadow: 0 0 0.6rem #b24406;
 }
 
 header h1:before {
@@ -207,10 +202,6 @@ header h1 span {
 .links h2 span {
   display: block;
   font: 100 1.6rem/1.33 "FiraSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.links h2 span sup {
-  font-size: 0.75em;
 }
 
 .links h2 a {
@@ -314,7 +305,7 @@ footer .cc {
   max-width: 90%;
   margin: 0 auto;
   font: bold 1.4rem/1.25 "FiraSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-shadow: 0 0 0.6rem #f76b1c;
+  text-shadow: 0 0 0.6rem #b24406;
   text-align: right;
 }
 

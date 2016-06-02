@@ -27,6 +27,7 @@ darkColor = #333
 lightColor = #eee
 linkColor = #9b99ff
 mainColor = #f76b1c
+mainShadowColor = darken( mainColor, 33% )
 
 // ----- commons
 
@@ -55,7 +56,7 @@ header
         position relative
         margin 0
         color white
-        text-shadow 0 0 .6rem mainColor
+        text-shadow 0 0 .6rem mainShadowColor
         &:before
             content ""
             position relative
@@ -190,7 +191,7 @@ footer
         max-width 90%
         margin 0 auto
         font bold 1.4rem/1.25 FiraSans
-        text-shadow 0 0 .6rem mainColor
+        text-shadow 0 0 .6rem mainShadowColor
         text-align right
         .love
             &:before
