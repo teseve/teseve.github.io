@@ -13,13 +13,13 @@
     "url": "git://github.com/teseve/teseve.github.io.git"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-jade": "^0.15.0",
-    "grunt-contrib-stylus": "^0.22.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-csso": "^0.7.1",
-    "grunt-uncss": "^0.4.3",
-    "kouto-swiss": "^0.11.13",
-    "matchdep": "^0.3.0"
+    "grunt": "^1.0.1",
+    "grunt-contrib-jade": "^1.0.0",
+    "grunt-contrib-stylus": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-csso": "^1.0.0",
+    "grunt-uncss": "^0.5.1",
+    "kouto-swiss": "^0.12.0",
+    "matchdep": "^1.0.1"
   }
 }
