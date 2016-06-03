@@ -13,8 +13,8 @@
     "url": "git://github.com/teseve/teseve.github.io.git"
   },
   "teseve": {
-    "version": "0.5.1",
-    "date": "June 2 2016"
+    "version": "0.5.2",
+    "date": "June 3 2016"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
